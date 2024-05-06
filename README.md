@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```
 
 ### 利用预训练模型进行推理
-```python
+```
 >>> import torch
 >>> from transformers import AutoModelForCausalLM, AutoTokenizer
 >>> from transformers.generation.utils import GenerationConfig
@@ -45,7 +45,7 @@ streamlit run web_demo.py --server.port 8888
 ```shell
 deepspeed --num_gpus={num_gpus} ./train/train.py 
 ```
-> 请您在开始进行模型训练前检查 `sft.json` 中的设置。
+请您在开始进行模型训练前检查 `sft.json` 中的设置。
 
 ## 模型评测
 <!-- We compare our model with three general-purpose LLMs and two conversational Chinese medical domain LLMs. Specifically, these are GPT-3.5 and GPT-4 from OpenAI, the aligned conversational version of our backbone model Baichuan-13B-Base, Baichuan-13B-Chat, and the open-source Chinese conversational medical model HuatuoGPT-13B (trained from Ziya-Llama-13B) and BianQue-2. Our evaluation approach encompasses two key dimensions: an assessment of conversational aptitude using GPT-4 as a reference judge, and a comprehensive benchmark evaluation. -->
