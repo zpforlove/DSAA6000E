@@ -18,7 +18,7 @@ def init_model():
         trust_remote_code=True
     )
     model.generation_config = GenerationConfig.from_pretrained(
-        "medllm-13B",
+        "Baichuan2-7B-MedLLM-Merged",
     )
     tokenizer = AutoTokenizer.from_pretrained(
         "Baichuan2-7B-MedLLM-Merged",
