@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```
 
 ### 利用预训练模型进行推理
-```
+```python
 >>> import torch
 >>> from transformers import AutoModelForCausalLM, AutoTokenizer
 >>> from transformers.generation.utils import GenerationConfig
